@@ -1,5 +1,5 @@
 public class CreditPaymentService {
-    public int calculate(int x, int y, double z) {
+    public int MonthlyPaymentCalculator(int x, int y, double z) {
 
         double bet = z / 100 / 12;
         y = y * 12;
