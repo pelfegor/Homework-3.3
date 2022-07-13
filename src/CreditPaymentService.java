@@ -1,9 +1,9 @@
 public class CreditPaymentService {
-    public int MonthlyPaymentCalculator(int x, int y, double z) {
+    public int MonthlyPaymentCalculator(int creditAmount, int year, double percent) {
 
-        double bet = z / 100 / 12;
-        y = y * 12;
-        double result = x * (bet + bet/(Math.pow((1+bet),y) - 1));
+        double monthlyPercent = percent / 100 / 12;
+        year = year * 12;
+        double result = creditAmount * (monthlyPercent + monthlyPercent/(Math.pow((1+monthlyPercent),year) - 1));
 
         return (int) result;
     }
